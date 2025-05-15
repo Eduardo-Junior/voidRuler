@@ -27,7 +27,6 @@
 
 > **Em desenvolvimento:**  
 > Este projeto está em estágio inicial e está sendo desenvolvido como uma experiência de aprendizado e design de sistemas.  
-> Contribuições são bem-vindas!
 
 ---
 
