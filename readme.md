@@ -17,7 +17,7 @@
 
 ## ⚙️ Tecnologias Utilizadas
 
-- **Backend:** Java 17, Spring Boot, Spring Web, Spring Data JPA  
+- **Backend:** Java 24, Spring Boot, Spring Web, Spring Data JPA  
 - **Frontend:** HTML/CSS com suporte a JavaScript básico *(ou framework futuro)*  
 - **Banco de Dados:** H2 (para desenvolvimento) / PostgreSQL (produção)  
 
