@@ -5,8 +5,15 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+
 public class Ruler {
     @Id
     @GeneratedValue
@@ -21,62 +28,4 @@ public class Ruler {
     @JoinColumn(name = "empire_id")
     private Empire empire;
 
-    public Ruler() {
-        super();
-    }
-
-    public Ruler(Long id, String name, int age, String title, String ideology, Empire empire) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.title = title;
-        this.ideology = ideology;
-        this.empire = empire;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getIdeology() {
-        return ideology;
-    }
-
-    public void setIdeology(String ideology) {
-        this.ideology = ideology;
-    }
-
-    public Empire getEmpire() {
-        return empire;
-    }
-
-    public void setEmpire(Empire empire) {
-        this.empire = empire;
-    }
-
-    
 }
